@@ -1,0 +1,14 @@
+%h3 Consulta
+
+= form_for Contact.new do |f|
+  %p
+    = f.text_field :name, placeholder: 'Nombre', size: 35
+    %i.icon-ok
+  %p
+    = f.text_field :email, placeholder: 'Email', size: 35
+    %i.icon-ok
+  %p
+    = f.text_area :query, placeholder: 'Consulta', cols: 35, rows: 5
+    %i.icon-ok
+  %p
+    = f.submit 'Consultar', class: 'but-dark'

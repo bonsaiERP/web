@@ -21,9 +21,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
@@ -32,7 +29,8 @@ gem 'haml-rails'
 gem 'guard-livereload', group: :development # Reload
 gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch: 'master'
 
-gem 'simple_form'
+gem 'virtus'
+
 gem 'font-awesome-rails'
 
 group :doc do

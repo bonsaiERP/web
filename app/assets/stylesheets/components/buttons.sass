@@ -1,0 +1,58 @@
+@import compass
+@import colors
+
+@mixin button($bg1, $bg2, $color)
+  background-color: $bg1
+  background: linear-gradient(darken($bg1, 5%), $bg1 85%, $bg2)
+  color: $color
+  border: 1px solid darken($bg1, 15%)
+  text-decoration: none
+  &:hover
+    color: white
+    background: linear-gradient($bg1 85%, $bg2)
+    text-decoration: none
+
+.but-green
+  +border-radius(4px)
+  +button($green, #8cc837, white)
+  padding: 0.5em 1em
+
+.but-blue
+  +border-radius(4px)
+  +button($blue, lighten($blue, 10%), white)
+  padding: 0.5em 1em
+
+.but-red
+  +border-radius(4px)
+  +button($red, lighten($red, 10%), white)
+  padding: 0.5em 1em
+
+.but-yellow
+  +border-radius(4px)
+  +button(#ffd200, desaturate(lighten(#ffd200, 10%), 5%), $dark)
+  padding: 0.5em 1em
+
+.but-dark
+  +border-radius(4px)
+  +button(darken($dark, 5%), darken($dark, 10%), white)
+  padding: 0.5em 1em
+
+// Buttons
+.button-green
+  background-color: $bonsai
+  background: linear-gradient(#59aa43, #6fbf44 85%, #8cc837)
+  color: white
+  border: 1px solid #597751
+  text-decoration: none
+  &:hover
+    color: white
+    background: linear-gradient(#6fbf44 85%, #8cc837)
+    text-decoration: none
+
+.button-blue
+  background: linear-gradient(darken($blue, 10%), $blue 85%, lighten($blue, 10%) )
+  color: white
+  &:hover
+    background: linear-gradient($blue 85%, lighten($blue, 10%) )
+    text-decoration: none
+
