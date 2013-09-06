@@ -1,0 +1,51 @@
+@import compass
+@import colors
+
+#menu
+  background-color: $grayLight
+  border-bottom: 2px solid #fb9a26
+  //margin-bottom: 0px
+  padding: 0px
+  .navbar-brand
+    padding: 10px
+    line-height: 30px
+  a
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-weight: normal
+    line-height: 20px
+    color: lighten($dark, 10%)
+    height: 100%
+    padding: 15px 20px
+    &:hover
+      color: $dark
+
+  .navbar-collapse
+    display: block !important
+
+  .pull-right
+    a
+      font-size: 18px
+      padding: 10px
+      line-height: 32px
+
+    .dark
+      color: darken($dark, 15%)
+
+  .navbar-brand
+    margin-left: 0px
+
+  .navbar-toggle
+    +border-radius
+    +box-shadow(0 0 5px darken($gray, 15%))
+    +text-shadow(1px 1px #cfcfcf)
+    border: 1px solid darken($gray, 10%)
+    background-color: lighten($gray, 15%)
+
+    &:hover
+      +box-shadow(0 0 5px darken($gray, 5%))
+      background-color: lighten($gray, 20%)
+
+//@media (max-width: 767px)
+  .navbar-collapse
+    font-size: 12px
+    display: none !important
