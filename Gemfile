@@ -33,6 +33,8 @@ gem 'virtus'
 
 gem 'font-awesome-rails'
 
+gem 'quiet_assets', group: :development
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
