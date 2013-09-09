@@ -11,21 +11,26 @@
 
 .pricebox
   margin: 20px 10px
-  +border-radius(2px)
-  +box-shadow(0 0 6px $grayLight)
+  +border-top-radius(4px)
+  +border-bottom-radius(2px)
+  +box-shadow(0 0 8px $grayLight)
   border: 1px solid lighten($gray, 12%)
   background-color: #fafafa
-  padding: 10px
+  padding: 10px 15px 25px
 
   h3
     color: $greenDark
-    font-size: 35px
+    font-size: 50px
     margin: 0px
+    margin-bottom: 10px
     small
-      color: $dark
-      font-size: 20px
+      color: $gray
+      font-size: 18px
 
   h4
-    margin: 4px 0px
-    font-weight: bold
-    color: $gray
+    margin: 4px 0px 10px
+    color: $dark
+    font-size: 20px
+
+  .center
+    margin-top: 20px
