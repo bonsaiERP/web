@@ -30,8 +30,8 @@ gem 'guard-livereload', group: :development # Reload
 gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch: 'master'
 
 gem 'virtus'
-
-gem 'font-awesome-rails'
+gem 'assets', git: 'git://github.com/boriscy/assets.git'
+#gem 'font-awesome-rails'
 
 gem 'quiet_assets', group: :development
 
