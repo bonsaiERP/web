@@ -21,6 +21,7 @@
   = csrf_meta_tag
 %body
   = render 'layouts/menu'
+  #home
   = render 'layouts/image'
   .container.pad20
     = yield
@@ -31,7 +32,7 @@
 
 :javascript
   $(function() {
-    $('.navbar-nav').on('click', 'a:not(.dark)', function(event) {
+    $('#menu').on('click', 'a:not(.dark)', function(event) {
       event.preventDefault();
       $this = $(this);
       $.scrollTo($this.attr('href'), 400, {offset: {top: -70}});
