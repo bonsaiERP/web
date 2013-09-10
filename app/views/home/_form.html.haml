@@ -1,11 +1,12 @@
 %h3#contacto Contacto
 
-= form_for Contact.new do |f|
-  %p
+= form_for Contact.new, url: contact_path, html: { id: 'contact-form' } do |f|
+
+  %p.name
     = f.text_field :name, placeholder: 'Nombre', size: 35
-  %p
+  %p.email
     = f.text_field :email, placeholder: 'Email', size: 35
-  %p
+  %p.query
     = f.text_area :query, placeholder: 'Consulta', cols: 35, rows: 5
   %p
     = f.submit 'Consultar', class: 'but-dark'

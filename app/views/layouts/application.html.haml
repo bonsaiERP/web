@@ -28,3 +28,14 @@
   = render 'layouts/footer'
 
   = javascript_include_tag "application"
+
+:javascript
+  $(function() {
+    $('.navbar-nav').on('click', 'a:not(.dark)', function(event) {
+      event.preventDefault();
+      $this = $(this);
+      $.scrollTo($this.attr('href'), 400, {offset: {top: -70}});
+    });
+
+    var frm = new Contact();
+  })

@@ -31,7 +31,9 @@ gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch
 
 gem 'virtus'
 gem 'assets', git: 'git://github.com/boriscy/assets.git'
-#gem 'font-awesome-rails'
+gem 'actionpack-page_caching' # page cache
+gem 'sucker_punch', '~> 1.0'
+gem 'valid_email'
 
 gem 'quiet_assets', group: :development
 

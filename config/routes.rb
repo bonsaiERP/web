@@ -1,6 +1,6 @@
 BonsaiErpSite::Application.routes.draw do
 
-  resources :contacts
+  post '/contact' => 'contact#create'
 
   root to: 'home#index'
 end
