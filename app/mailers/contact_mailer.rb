@@ -6,6 +6,6 @@ class ContactMailer < ActionMailer::Base
 
   private
     def emails
-      %w(pablo@bonsaierp.com boris@bonsaierp.com contacto@bonsaierp.com)
+      %w(contacto@bonsaierp.com)
     end
 end
