@@ -26,6 +26,7 @@ module BonsaiErpSite
     config.i18n.default_locale = :es
 
     config.assets.paths << Rails.root.join('vendor', 'assets')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'font')
 
     config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
   end

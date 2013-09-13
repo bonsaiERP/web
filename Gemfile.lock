@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/boriscy/assets.git
-  revision: 8b602d5ad4e6640de59bfee1c37bcb3016006bc0
-  specs:
-    assets (1.0.8)
-      rails (>= 3.0)
-
-GIT
   remote: https://github.com/Compass/compass-rails.git
   revision: aea69635f6000bbc7180f7fdd0ce216f904db30d
   branch: master
@@ -187,7 +180,6 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-page_caching
-  assets!
   coffee-rails (~> 4.0.0)
   compass-rails!
   guard-livereload
