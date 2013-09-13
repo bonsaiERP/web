@@ -39,4 +39,17 @@
     });
 
     var frm = new Contact();
+
+    // Check size
+    function alignMenu() {
+      if($(window).width() <= 768) {
+        $('#menu .nav-main ul.nav').removeClass('pull-right');
+      }
+      if($(window).width() > 768) {
+        $('#menu .nav-main ul.nav').addClass('pull-right');
+      }
+    }
+
+    $(window).resize(function() { alignMenu() });
+    alignMenu()
   })

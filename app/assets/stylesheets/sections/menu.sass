@@ -16,20 +16,17 @@
     color: lighten($dark, 10%)
     height: 100%
     padding: 15px 20px
+    display: block
+    font-size: 18px
+    padding: 10px
+    line-height: 32px
     &:hover
+      background-color: lighten($grayLight, 5%)
       color: $dark
 
-  .navbar-collapse
-    display: block !important
 
-  .pull-right
-    a
-      font-size: 18px
-      padding: 10px
-      line-height: 32px
-
-    .dark
-      color: darken($dark, 15%)
+  .dark
+    color: darken($dark, 15%)
 
   .navbar-brand
     margin-left: 0px
@@ -44,8 +41,3 @@
     &:hover
       +box-shadow(0 0 5px darken($gray, 5%))
       background-color: lighten($gray, 20%)
-
-//@media (max-width: 767px)
-  .navbar-collapse
-    font-size: 12px
-    display: none !important
