@@ -29,5 +29,7 @@ module BonsaiErpSite
     config.assets.paths << Rails.root.join('vendor', 'assets', 'font')
 
     config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
+
+    config.exceptions_app = self.routes
   end
 end
