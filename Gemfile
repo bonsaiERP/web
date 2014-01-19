@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'haml-rails'
 #gem 'zurb-foundation', '~> 4.0.0' # templates, etc
 gem 'guard-livereload', group: :development # Reload
-gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch: 'master'
+gem 'compass-rails', '~> 1.1.3'#, '~> 2.0.alpha.0' # Extend css clases
 
 gem 'virtus'
 gem 'assets', git: 'git://github.com/boriscy/assets.git'
