@@ -33,3 +33,4 @@ module BonsaiErpSite
     config.exceptions_app = self.routes
   end
 end
+I18n.enforce_available_locales = false
