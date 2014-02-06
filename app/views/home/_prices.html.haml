@@ -1,55 +1,90 @@
 %h2#prices Planes y precios
 
-
-.row
-  .col-md-4
-    %h3 Todos los planes incluyen
-
-    %ul.common-features
+.prices
+  .initial
+    %ul
+      %li.pricebox
+        .pack INICIAL
+        %h3
+          30
+          %span.dollar(title='Dólares americanos') USD
+          %small al mes
+        .clearfix
       %li
-        %i.icon-ok.green
-        Prueba gratis por 15 días
+        %span.big 2
+        usuarios
       %li
-        %i.icon-ok.green
-        Sin contratos
+        Almacenamiento
+        %strong 5GB
+      -#%li.center
+        Exportación cada 15 días
+        %strong.tip(title="Exporta todos los datos en los últimos 365 días" data-toggle='tooltip') ?
       %li
-        %i.icon-ok.green
-        Actualizaciones gratuitas
-      %li
-        %i.icon-ok.green
         Registros ilimitados
       %li
-        %i.icon-ok.green
-        Backups diarios de su información
+        Funciona en unidades móviles
       %li
-        %i.icon-ok.green
-        Funcionamiento en unidades móviles
-
-
-  .col-md-4.col-sm-4
-    .pricebox
-      %h3
-        30
-        %small USD por mes
-
-      %h4
-        %span.gray PEQUEÑO:
-        2 usuarios
-
-      -#.center
-        %a.but-blue(href='http://app.bonsaierp.com/registrations/new')
-          Regístrese
-
-  .col-md-4.col-sm-4
-    .pricebox
-      %h3
-        50
-        %small USD por mes
-
-      %h4
-        %span.gray MEDIANO:
-        5 usuarios
-
-      -#.center
-        %a.but-blue(href='http://app.bonsaierp.com/registrations/new')
-          Regístrese
+        Backups diarios
+      %li
+        Actualizaciones gratuitas
+      %li
+        Multiples monedas
+  .medium
+    .popular.center Más popular
+    %ul
+      %li.pricebox
+        .pack MEDIO
+        %h3
+          50
+          %span.dollar(title='Dólares americanos') USD
+          %small al mes
+      %li
+        %span.big 5
+        usuarios
+      %li
+        Almacenamiento
+        %strong 10GB
+      -#%li.center
+        Exportación cada 5 días
+        %strong.tip(title="Exporta todos los datos en los últimos 365 días" data-toggle='tooltip') ?
+      %li
+        Registros ilimitados
+      %li
+        Funciona en unidades móviles
+      %li
+        Backups diarios
+      %li
+        Actualizaciones gratuitas
+      %li
+        Multiples monedas
+      %li
+        %strong(title='Puede definir colores y logo en su sistema y sus impresiones' data-toggle='tooltip') * Personalización
+  .premium
+    %ul
+      %li.pricebox
+        .pack PREMIUN
+        %h3
+          80
+          %span.dollar(title='Dólares americanos') USD
+          %small al mes
+      %li
+        %span.big 10
+        usuarios
+      %li
+        Almacenamiento
+        %strong 20GB
+      -#%li.center
+        Exportación todos los días
+        %strong.tip(title="Exporta todos los datos en los últimos 365 días" data-toggle='tooltip') ?
+      %li
+        Registros ilimitados
+      %li
+        Funciona en unidades móviles
+      %li
+        Backups diarios
+      %li
+        Actualizaciones gratuitas
+      %li
+        Multiples monedas
+      %li
+        %strong(title='Puede definir colores y logo en su sistema y sus impresiones' data-toggle='tooltip') * Personalización

@@ -33,6 +33,8 @@
 
 :javascript
   $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+
     $('#menu').on('click', 'a:not(.dark)', function(event) {
       event.preventDefault();
       $this = $(this);

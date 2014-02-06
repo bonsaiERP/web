@@ -53,9 +53,12 @@
 .icon-youtube:before {
   content: "e";
 }
-.icon-fontawesome-webfont:before {
+.icon-ok:before {
   content: "f";
 }
 .icon-reorder:before {
   content: "g";
+}
+.icon-cross:before {
+  content: "h";
 }
