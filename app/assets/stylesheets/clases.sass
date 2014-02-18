@@ -34,8 +34,7 @@
 
 
 .comment
-  +border-radius(10px)
-  +box-shadow(2px 2px 8px #afafaf)
+  +box-shadow(2px 2px 4px #afafaf)
   padding: 15px
   background-color: #efefef
   margin-bottom: 20px
@@ -46,7 +45,7 @@
     margin-right: 15px
   p
     +text-shadow(1px 1px 1px white)
-    font-size: 17px
+    font-size: 18px
     margin-bottom: 25px
 
 .comment.small
@@ -55,6 +54,11 @@
     margin-bottom: 0px
     font-size: 16px
 
+.radius-small
+  +border-radius(3px)
+
+.bordered
+  border: 1px solid $grayLight
 
 // Fonts
 [class^='icon-'],
