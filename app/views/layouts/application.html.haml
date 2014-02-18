@@ -36,7 +36,7 @@
   $(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
-    $('#menu').on('click', 'a:not(.dark)', function(event) {
+    $('#menu').on('click', 'a:not(.login)', function(event) {
       event.preventDefault();
       $this = $(this);
       $.scrollTo($this.attr('href'), 400, {offset: {top: -70}});
