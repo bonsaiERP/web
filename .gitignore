@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 /.sass-cache
+/config/secrets.yml
+/config/database.yml

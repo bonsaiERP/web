@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.1.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.6'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -40,4 +40,11 @@ gem 'quiet_assets', group: :development
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'capistrano', '~> 3.2.0'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
