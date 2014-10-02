@@ -31,10 +31,10 @@ gem 'guard-livereload', group: :development # Reload
 gem 'compass-rails', '~> 1.1.6'#, '~> 2.0.alpha.0' # Extend css clases
 gem 'bootstrap-sass'
 
-gem 'virtus'
+#gem 'virtus'
 gem 'actionpack-page_caching' # page cache
-gem 'sucker_punch', '~> 1.0'
-gem 'validates_email_format_of'
+#gem 'sucker_punch', '~> 1.0'
+#gem 'validates_email_format_of'
 
 gem 'quiet_assets', group: :development
 
