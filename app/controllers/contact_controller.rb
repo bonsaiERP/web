@@ -5,9 +5,9 @@ class ContactController < ApplicationController
 
     if contact.valid?
       ContactMailerJob.new.async.perform(contact)
-
+      #ContactMailer.send_message(contact).deliver!
       render json: {success: true}
-     else
+    else
        render json: contact.errors
     end
   end

@@ -30,9 +30,12 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    axiom-types (0.0.5)
-      descendants_tracker (~> 0.0.1)
-      ice_nine (~> 0.9)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     capistrano (3.2.1)
       i18n
@@ -71,7 +74,8 @@ GEM
     compass-rails (1.1.7)
       compass (>= 0.12.2)
       sprockets (<= 2.11.0)
-    descendants_tracker (0.0.3)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -124,6 +128,8 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -184,20 +190,20 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    valid_email (0.0.4)
-      activemodel
-      mail
-    virtus (1.0.1)
-      axiom-types (~> 0.0.5)
+    validates_email_format_of (1.6.1)
+      i18n
+    virtus (1.0.3)
+      axiom-types (~> 0.1)
       coercible (~> 1.0)
-      descendants_tracker (~> 0.0.1)
-      equalizer (~> 0.0.7)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   actionpack-page_caching
+  bootstrap-sass
   capistrano (~> 3.2.0)
   capistrano-bundler
   capistrano-rails (~> 1.1)
@@ -206,11 +212,12 @@ DEPENDENCIES
   compass-rails (~> 1.1.6)
   guard-livereload
   haml-rails
+  pry-rails
   quiet_assets
   rails (= 4.1.6)
   sass-rails (~> 4.0.2)
   sdoc
   sucker_punch (~> 1.0)
   uglifier
-  valid_email
+  validates_email_format_of
   virtus

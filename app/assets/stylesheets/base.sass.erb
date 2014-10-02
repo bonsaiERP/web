@@ -145,30 +145,10 @@ h4
   padding: 15px
   min-height: 150px
 
-@media (max-width: 768px)
-  .portrait
-    #bonsai-logo
+header
+  .navbar-brand
+    img
       width: 140px
-      top: 10px
-      left: 10px
-
-  #slogan-header
-    top: 100px
-    left: 10px
-    h4
-      font-size: 17px
-
-
-.detail
-  margin: 10px 10px 10px 0px
-  max-width: 300px
-  h3, h4
-    color: $dark
-  img
-    width: 270px
-    border: 1px solid #efefef
-    margin-right: 15px
-    float: left
 
 .unstyled
   list-style: none
@@ -189,3 +169,34 @@ h4
 .navbar-header
   .icon-reorder
     font-size: 16px
+
+.detail
+  margin: 10px 10px 10px 0px
+  max-width: 300px
+  h3, h4
+    color: $dark
+  img
+    width: 270px
+    border: 1px solid #efefef
+    margin-right: 15px
+    float: left
+
+// Responsive
+@media (max-width: 768px)
+  .portrait
+    #bonsai-logo
+      width: 140px
+      top: 10px
+      left: 10px
+
+  #slogan-header
+    top: 100px
+    left: 10px
+    h4
+      font-size: 17px
+
+  header
+    .navbar-brand
+      img
+        width: 100px
+

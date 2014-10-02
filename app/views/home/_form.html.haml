@@ -4,13 +4,13 @@
   %h3 Contacto
   %strong.text-muted Contactenos a:
   %a(href="mailto:contacto@bonsaierp.com") contacto@bonsaierp.com
-  %br
-  o llene nuestro formulario de contacto
-  %br
-  %br
+  -#%br
+  -#o llene nuestro formulario de contacto
+  -#%br
+  -#%br
 
 
-= form_for Contact.new, url: contact_path, html: { id: 'contact-form' } do |f|
+-#= form_for Contact.new, url: contact_path, html: { id: 'contact-form' } do |f|
 
   %p.name
     = f.text_field :name, placeholder: 'Nombre', size: 35

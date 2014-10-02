@@ -1,4 +1,4 @@
-@import compass
+@import 'compass'
 @import 'colors'
 
 #menu
@@ -34,12 +34,13 @@
 
   .navbar-toggle
     +border-radius
-    +box-shadow(0 0 5px darken($gray, 15%))
-    +text-shadow(1px 1px #cfcfcf)
+    +box-shadow(0 0 5px darken($green, 15%))
+    +text-shadow(1px 1px $green)
     border: 1px solid darken($gray, 10%)
-    background-color: lighten($gray, 15%)
+    color: white
+    background-color: $bonsai// lighten($gray, 15%)
 
     &:hover
       +box-shadow(0 0 5px darken($gray, 5%))
-      background-color: lighten($gray, 20%)
+      background-color: lighten($bonsai, 10%)
 

@@ -29,11 +29,12 @@ gem 'haml-rails'
 #gem 'zurb-foundation', '~> 4.0.0' # templates, etc
 gem 'guard-livereload', group: :development # Reload
 gem 'compass-rails', '~> 1.1.6'#, '~> 2.0.alpha.0' # Extend css clases
+gem 'bootstrap-sass'
 
 gem 'virtus'
 gem 'actionpack-page_caching' # page cache
 gem 'sucker_punch', '~> 1.0'
-gem 'valid_email'
+gem 'validates_email_format_of'
 
 gem 'quiet_assets', group: :development
 
@@ -47,4 +48,5 @@ group :development do
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
+  gem 'pry-rails'
 end
