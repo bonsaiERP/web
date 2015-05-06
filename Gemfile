@@ -1,20 +1,19 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.9'
+gem 'rails', '4.2.1'
 
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier'#, '>= 1.3.0'
+gem 'uglifier'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.1'
+gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -26,9 +25,8 @@ gem 'coffee-rails', '~> 4.0.1'
 #gem 'jbuilder', '~> 1.2'
 
 gem 'haml-rails'
-#gem 'zurb-foundation', '~> 4.0.0' # templates, etc
 gem 'guard-livereload', group: :development # Reload
-gem 'compass-rails', '~> 1.1.6'#, '~> 2.0.alpha.0' # Extend css clases
+gem 'compass-rails'
 gem 'bootstrap-sass'
 
 #gem 'virtus'
@@ -44,7 +42,7 @@ group :doc do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.2.0'
+  gem 'capistrano'
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
