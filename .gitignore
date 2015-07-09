@@ -17,3 +17,4 @@
 /.sass-cache
 /config/secrets.yml
 /config/database.yml
+.tags

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 
 # Use sqlite3 as the database for Active Record
 
@@ -25,7 +25,6 @@ gem 'coffee-rails'
 #gem 'jbuilder', '~> 1.2'
 
 gem 'haml-rails'
-gem 'guard-livereload', group: :development # Reload
 gem 'compass-rails'
 gem 'bootstrap-sass'
 
@@ -34,14 +33,14 @@ gem 'actionpack-page_caching' # page cache
 #gem 'sucker_punch', '~> 1.0'
 #gem 'validates_email_format_of'
 
-gem 'quiet_assets', group: :development
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
 group :development do
+  gem 'quiet_assets'
+  gem 'guard-livereload' # Reload
   gem 'capistrano'
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-bundler'
