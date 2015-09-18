@@ -3,7 +3,7 @@
 # Supports bulk-adding hosts to roles, the primary server in each group
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
-
+set :rvm_ruby_version, 'ruby-2.2.3@rails-4.2'
 role :app, %w{bonsaierp.com}
 role :web, %w{bonsaierp.com}
 role :db,  %w{bonsaierp.com}
