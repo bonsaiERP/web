@@ -27,7 +27,7 @@ gem 'coffee-rails'
 gem 'haml-rails'
 gem 'compass-rails'
 gem 'bootstrap-sass'
-
+gem 'json', '1.8.1'
 #gem 'virtus'
 gem 'actionpack-page_caching' # page cache
 #gem 'sucker_punch', '~> 1.0'
