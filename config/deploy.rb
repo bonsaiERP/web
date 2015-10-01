@@ -1,8 +1,8 @@
 # config valid only for Capistrano 3.1
 lock '3.4.0'
 
-set :application, 'bonsaierpsite'
-set :repo_url, 'git@bitbucket.org:boriscyber/bonsaierpsite.git'
+set :application, 'web'
+set :repo_url, 'git@github.com:bonsaiERP/web.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
