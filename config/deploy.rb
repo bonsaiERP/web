@@ -35,6 +35,7 @@ set :repo_url, 'git@github.com:bonsaiERP/web.git'
 # set :keep_releases, 5
 require 'capistrano/rvm'
 set :rvm_ruby_string, "ruby-2.3.1@rails-4.2"
+set :rvm_ruby_version, "2.3.1"
 
 namespace :deploy do
 
