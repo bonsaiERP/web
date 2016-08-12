@@ -33,6 +33,8 @@ set :repo_url, 'git@github.com:bonsaiERP/web.git'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+require 'capistrano/rvm'
+set :rvm_ruby_string, "ruby-2.3.1@rails-4.2"
 
 namespace :deploy do
 
