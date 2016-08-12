@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.7.1'
 
 # Use sqlite3 as the database for Active Record
 
@@ -27,7 +27,6 @@ gem 'coffee-rails'
 gem 'haml-rails'
 gem 'compass-rails'
 gem 'bootstrap-sass'
-gem 'json', '1.8.1'
 #gem 'virtus'
 gem 'actionpack-page_caching' # page cache
 #gem 'sucker_punch', '~> 1.0'
