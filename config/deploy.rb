@@ -1,6 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '>= 3.5.0'
 
+set :rvm_ruby_version, 'ruby-2.3.1@rails-4.2'
 set :application, 'web'
 set :repo_url, 'git@github.com:bonsaiERP/web.git'
 
