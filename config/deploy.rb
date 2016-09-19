@@ -40,6 +40,8 @@ set :repo_url, 'git@github.com:bonsaiERP/web.git'
 #set :rvm_ruby_version, '2.3.1@rails-4.2'
 #set :rvm_custom_path, '/home/deploy/.rvm/'
 
+set :rvm_ruby_string, :local
+
 namespace :deploy do
 
   desc 'Restart application'
